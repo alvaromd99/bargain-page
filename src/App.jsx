@@ -1,5 +1,9 @@
 import './App.css'
 import { Route, Routes, Link, useParams, Outlet } from 'react-router-dom'
+import { MyNavLink } from './MyNavLink.jsx'
+
+// TODO Darle estilos y ponerlo bonito
+// TODO Cambiar la pagina de bargains a tacos
 
 const Home = () => <h1>Home</h1>
 
@@ -48,10 +52,10 @@ function App() {
 				<nav>
 					<ul>
 						<li>
-							<Link to='/search-page'>Search Page</Link>
+							<MyNavLink to='/'>Home</MyNavLink>
 						</li>
 						<li>
-							<Link to='/'>Home</Link>
+							<MyNavLink to='/search-page'>Search Page</MyNavLink>
 						</li>
 					</ul>
 				</nav>
